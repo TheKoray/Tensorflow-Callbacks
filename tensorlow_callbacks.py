@@ -49,6 +49,8 @@ def train():
                       
                       Dense(units=512,activation=tf.nn.relu),
                       
+                      Dense(units=256,activation=tf.nn.relu),
+                      
                       Dense(units=10,activation=tf.nn.softmax)
                       ])
     
