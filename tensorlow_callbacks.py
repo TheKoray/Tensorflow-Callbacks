@@ -60,7 +60,7 @@ def train():
     
     history=model.fit(x_train,y_train,epochs=5,callbacks=[callbacks])
         
-    return history
+    return history.epoch,history.history['acc'][-1]
 
 
 
